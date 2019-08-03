@@ -1,4 +1,4 @@
 provider "aws" {
-    region = "us-region-2"
+    region = "us-region-1"
   
 }

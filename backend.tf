@@ -1,7 +1,7 @@
-terraform{
-    backend "s3{
+terraform {
+    backend "s3"{
         bucket = "infrastructure-april-mustafa"
-        region = "us-east-2"
+        region =  "us-east-1"
         key = "infra.state"
-    }"
+    }
 }

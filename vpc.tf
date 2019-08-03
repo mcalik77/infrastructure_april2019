@@ -5,6 +5,6 @@ resource "aws_vpc" "dev {
     Name = "${var.Name}"
     Env = "${var.Env}"
     Created_by = "${var.Created_by}"
-    Dept = "${var.Dept"
+    Dept = "${var.Dept}"
   }
 }

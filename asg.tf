@@ -9,7 +9,7 @@ module "wordpress" {
 
   image_id        = "${var.ami}"
   instance_type   = "${var.instance_type}"
-  security_groups = ["${aws_security_group.public.id}"]
+  security_groups = ["${aws_security_group.public1a.id}","${aws_security_group.public1b.id}","${aws_security_group.public1c.id}"]
  
 
   # Auto scaling group

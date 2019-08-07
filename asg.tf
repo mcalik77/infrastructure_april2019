@@ -9,12 +9,12 @@ module "wordpress" {
 
   image_id        = "${var.ami}"
   instance_type   = "${var.instance_type}"
-  security_groups = ["${aws_security_group.public1a.id}","${aws_security_group.public1b.id}","${aws_security_group.public1c.id}"]
+  security_groups = ["${aws_security_group.public.id}"]
  
 
   # Auto scaling group
   asg_name                  = "wordpress-asg"
-  vpc_zone_identifier       = ["${aws_subnet.public.id}"]
+  vpc_zone_identifier       = ["${aws_subnet.public1a.id}","${aws_security_group.public1b.id}","${aws_security_group.public1c.id}"]
   health_check_type         = "EC2"
   min_size                  = "${var.min_app_size}"
   max_size                  = "${var.max_app_size}"

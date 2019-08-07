@@ -3,6 +3,7 @@ variable "Env" {}
 variable "Created_by" {}
 variable "Dept" {}
 variable "ami" {}
+variable "ami_db" {}
 variable "instance_type" {}
 variable "key_name" {}
 variable "region" {}

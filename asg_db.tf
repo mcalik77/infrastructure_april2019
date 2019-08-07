@@ -7,7 +7,7 @@ module "mysql" {
   # Launch configuration
   lc_name = "mysql-lc"
 
-  image_id        = "${var.ami}"
+  image_id        = "${var.ami_db}"
   instance_type   = "${var.instance_type}"
   security_groups = ["${aws_security_group.privateDB.id}"]
  

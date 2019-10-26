@@ -1,7 +1,7 @@
 terraform {
     backend "s3"{
-        bucket = "infrastructure-april-mustafa"
+        bucket = "remote-exec-mustafa"
         region =  "us-east-1"
-        key = "infra.state"
+        key = "infra1.state"
     }
 }
